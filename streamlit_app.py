@@ -1,13 +1,20 @@
 import streamlit
+import pandas
+import requests
+import snowflake.connector
+from urllib.error import URLError
 
-streamlit.title('My parents new healthy diner')
+ 
+
+streamlit.title('My Parents New Healthy Diner')
 streamlit.header('Breakfast Menu')
-streamlit.text('🥣 Omega 3 & blueberry oatmeal')
-streamlit.text('🥗 Kale, spinach & Rocket smoothie')
-streamlit.text('🐔 Hard-boiled Free-Range Egg') 
-streamlit.text('🥑🍞 Avocado Toast')
-
+streamlit.text(' 🥣 Omega 3 & Blueberry Oatmeal')
+streamlit.text(' 🥗 Kale, Spinach & Rocket Smoothie')
+streamlit.text(' 🐔 Hard-Boiled Free-Range Egg')
+streamlit.text('🥑🍞 Avacado Toast')
 streamlit.header('🍌🥭 Build Your Own Fruit Smoothie 🥝🍇')
+
+ 
 
 #import pandas
 my_fruit_list = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt")
